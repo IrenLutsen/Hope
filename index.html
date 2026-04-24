@@ -46,6 +46,7 @@ body {
   cursor: pointer;
   font-weight: 700;
   border-radius: 15px;
+  transition: 0.3s;
 }
 .lang-btn.active { background: var(--yellow); color: var(--dark); }
 
@@ -80,7 +81,7 @@ body {
   max-width: 900px;
 }
 
-/* PROJECT GRID */
+/* PROJECT SUMMARY GRID */
 .project-summary {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -122,16 +123,16 @@ section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
 /* PHOTOS */
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 15px;
   margin: 25px 0;
 }
 
 .photo-grid img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 12px;
 }
 
 .mission-box {
@@ -191,11 +192,11 @@ footer { background: var(--dark); color: white; padding: 40px; text-align: cente
       
       <div class="photo-grid">
         <img src="1.jpg" alt="AUK Students">
-        <img src="2.jpg" alt="AUK Learning">
+        <img src="2.jpg" alt="AUK Class">
       </div>
 
-      <p style="font-size: 0.9rem; color: #666;" data-lang="ua">*Додатково 5 грантів на повне навчання в університеті (по 20 000$ кожен, всього 100 000$).</p>
-      <p style="font-size: 0.9rem; color: #666;" data-lang="en">*Additionally, 5 full university scholarships ($20,000 each, $100,000 total).</p>
+      <p style="font-size: 0.85rem; color: #666; margin-top: 15px;" data-lang="ua">*Додатково передбачено 5 грантів на повне навчання в університеті (по 20 000$ на студента, загалом 100 000$).</p>
+      <p style="font-size: 0.85rem; color: #666; margin-top: 15px;" data-lang="en">*Additionally, 5 full university scholarships are provided ($20,000 per student, $100,000 total).</p>
     </div>
   </div>
 
@@ -205,34 +206,37 @@ footer { background: var(--dark); color: white; padding: 40px; text-align: cente
         <h2 data-lang="en">Kharkiv Region</h2>
     </div>
     <div class="project-content">
-      <p data-lang="ua">Створення безпечних умов для освіти 160 дітей у постраждалих регіонах.</p>
-      <p data-lang="en">Creating safe educational conditions for 160 children in affected regions.</p>
+      <p data-lang="ua">Створення освітнього центру для 160 дітей у постраждалих регіонах Харківщини.</p>
+      <p data-lang="en">Establishing an educational center for 160 children in the affected areas of the Kharkiv region.</p>
       
       <div class="photo-grid">
-        <img src="3.jpg" alt="Kharkiv Kids">
-        <img src="4.jpg" alt="Educational center">
-        <img src="5.jpg" alt="Learning process">
+        <img src="3.jpg" alt="Workshops">
+        <img src="4.jpg" alt="Children learning">
+        <img src="5.jpg" alt="Group photo">
       </div>
     </div>
   </div>
 
   <div class="project-block">
-    <div class="project-header"><h2>Hope Language Center</h2></div>
+    <div class="project-header"><h2>Hope - children of Ukraine</h2></div>
     <div class="project-content">
-      <p data-lang="ua">Річний бюджет: 72 000$. Якщо розширити проект (арт-терапія, профорієнтація) — додатково +36 000$ на рік.</p>
-      <p data-lang="en">Annual budget: $72,000. Expansion (art therapy, career guidance) adds +$36,000 per year.</p>
+      <p data-lang="ua">Центр розвитку та мовної підготовки для 250 дітей.</p>
+      <p data-lang="en">Development and language training center for 250 children.</p>
       
       <div class="photo-grid">
-        <img src="8.jpg" alt="Hope activities">
-        <img src="9.jpg" alt="Children">
+        <img src="8.jpg" alt="Hope Lesson">
+        <img src="9.jpg" alt="Happy children">
       </div>
 
       <div class="mission-box">
         <h3 data-lang="ua">Місія фонду</h3>
         <h3 data-lang="en">Our Mission</h3>
-        <p data-lang="ua">В Україні рівень знання англійської залишається низьким. Наша амбітна ціль — збільшити % дітей, які вільно володіють мовою, відкриваючи їм шлях у світ.</p>
-        <p data-lang="en">In Ukraine, English proficiency levels remain low. Our ambitious goal is to increase the % of children fluent in English, opening their path to the world.</p>
+        <p data-lang="ua">В Україні рівень володіння англійською потребує значного покращення. У нас є амбітна ціль — збільшити % дітей, які вільно спілкуються англійською, відкриваючи їм світ нових можливостей.</p>
+        <p data-lang="en">In Ukraine, the level of English proficiency needs significant improvement. We have an ambitious goal — to increase the percentage of children who speak English fluently, opening up a world of new opportunities for them.</p>
       </div>
+
+      <p style="margin-top: 20px; font-size: 0.85rem; font-style: italic;" data-lang="ua">*Якщо розширити проект та додати арт-терапію і профорієнтацію — додатково +36 000$ на рік.</p>
+      <p style="margin-top: 20px; font-size: 0.85rem; font-style: italic;" data-lang="en">*Expanding the project to include art therapy and career guidance adds $36,000 per year.</p>
     </div>
   </div>
 </section>
