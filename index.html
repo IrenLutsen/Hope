@@ -3,17 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hope Children of Ukraine</title>
+<title>Hope - Children of Ukraine</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
 :root {
   --blue: #005BBB;
   --yellow: #FFD700;
   --dark: #0a0f1e;
   --text: #1a1a2e;
-  --light-bg: #f8f6f0;
   --white: #ffffff;
 }
 
@@ -22,19 +21,19 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background: var(--light-bg);
+  background: #f8f6f0;
   color: var(--text);
   line-height: 1.6;
 }
 
-/* LANGUAGE TOGGLE */
+/* LANG TOGGLE */
 .lang-toggle {
   position: fixed;
   top: 20px;
   right: 20px;
   z-index: 1000;
   display: flex;
-  background: rgba(0, 91, 187, 0.9);
+  background: var(--blue);
   border-radius: 20px;
   padding: 5px;
 }
@@ -46,13 +45,12 @@ body {
   cursor: pointer;
   font-weight: 700;
   border-radius: 15px;
-  transition: 0.3s;
 }
 .lang-btn.active { background: var(--yellow); color: var(--dark); }
 
 /* HERO */
 .hero {
-  min-height: 100vh;
+  min-height: 80vh;
   background: linear-gradient(rgba(0, 43, 107, 0.75), rgba(0, 91, 187, 0.8)), 
               url('https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80') center/cover;
   display: flex;
@@ -66,81 +64,78 @@ body {
 
 .logo-text {
   font-family: 'Playfair Display', serif;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 900;
   color: var(--yellow);
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
 
 .hero h1 {
   font-family: 'Playfair Display', serif;
-  font-size: clamp(1.8rem, 5vw, 3.5rem);
-  margin-bottom: 40px;
-  max-width: 900px;
+  font-size: clamp(1.8rem, 5vw, 3rem);
+  margin-bottom: 30px;
 }
 
-/* PROJECT SUMMARY GRID */
-.project-summary {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  width: 100%;
+.btn-donate {
+  background: var(--yellow);
+  color: var(--dark);
+  padding: 15px 35px;
+  text-decoration: none;
+  font-weight: 800;
+  border-radius: 30px;
+  text-transform: uppercase;
+  transition: 0.3s;
 }
-
-.summary-card {
-  background: rgba(255,255,255,0.1);
-  padding: 25px;
-  border-radius: 15px;
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,255,255,0.2);
-  text-align: left;
-}
-
-.summary-card h3 { color: var(--yellow); margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+.btn-donate:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(255,215,0,0.4); }
 
 /* SECTIONS */
-section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
+section { padding: 60px 20px; max-width: 1000px; margin: 0 auto; }
 
 .project-block {
   background: white;
-  border-radius: 20px;
+  border-radius: 25px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-  margin-bottom: 50px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.05);
+  margin-bottom: 60px;
 }
 
 .project-header {
   background: var(--blue);
   color: white;
-  padding: 30px;
+  padding: 40px;
 }
+
+.project-header a {
+  color: var(--yellow);
+  text-decoration: none;
+}
+.project-header a:hover { text-decoration: underline; }
 
 .project-content { padding: 40px; }
 
-/* PHOTOS */
+.content-part { margin-bottom: 25px; }
+.content-part h4 { color: var(--blue); margin-bottom: 8px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+
+.budget-box {
+  background: #f0f7ff;
+  border-left: 5px solid var(--yellow);
+  padding: 25px;
+  margin-top: 20px;
+}
+
 .photo-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
   margin: 25px 0;
 }
-
 .photo-grid img {
   width: 100%;
-  height: 250px;
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
-}
-
-.mission-box {
-  background: #f0f7ff;
-  border-left: 5px solid var(--blue);
-  padding: 30px;
-  margin-top: 20px;
-  border-radius: 0 15px 15px 0;
 }
 
 /* LANG VISIBILITY */
@@ -148,7 +143,7 @@ section { padding: 60px 20px; max-width: 1100px; margin: 0 auto; }
 body.lang-en [data-lang="ua"] { display: none; }
 body.lang-en [data-lang="en"] { display: block; }
 
-footer { background: var(--dark); color: white; padding: 40px; text-align: center; }
+footer { background: var(--dark); color: white; padding: 50px 20px; text-align: center; }
 </style>
 </head>
 <body>
@@ -160,90 +155,128 @@ footer { background: var(--dark); color: white; padding: 40px; text-align: cente
 
 <div class="hero">
   <div class="logo-text">Hope - children of Ukraine</div>
-  <h1 data-lang="ua">Освітні проекти для українських дітей</h1>
-  <h1 data-lang="en">Educational Projects for Ukrainian Children</h1>
-
-  <div class="project-summary">
-    <div class="summary-card">
-      <h3>AUK</h3>
-      <p data-lang="ua">Бюджет: 8 832$*<br>Охоплено: 30 підлітків<br><small>(294$ на дитину/рік)</small></p>
-      <p data-lang="en">Budget: $8,832*<br>Reach: 30 teenagers<br><small>($294 per child/year)</small></p>
-    </div>
-    <div class="summary-card">
-      <h3 data-lang="ua">Харк. обл.</h3>
-      <h3 data-lang="en">Kharkiv Reg.</h3>
-      <p data-lang="ua">Бюджет: 34 190$<br>Охоплено: 160 дітей<br><small>(213$ на дитину/рік)</small></p>
-      <p data-lang="en">Budget: $34,190<br>Reach: 160 children<br><small>($213 per child/year)</small></p>
-    </div>
-    <div class="summary-card">
-      <h3>Hope</h3>
-      <p data-lang="ua">Бюджет: 72 000$*<br>Охоплено: 250 дітей<br><small>(288$ на дитину/рік)</small></p>
-      <p data-lang="en">Budget: $72,000*<br>Reach: 250 children<br><small>($288 per child/year)</small></p>
-    </div>
-  </div>
+  <h1 data-lang="ua">Трансформуємо життя дітей через освіту</h1>
+  <h1 data-lang="en">Transforming children's lives through education</h1>
+  <a href="https://hopechildrenua.org/program-donation-page/" class="btn-donate" data-lang="ua">Підтримати проект</a>
+  <a href="https://hopechildrenua.org/program-donation-page/" class="btn-donate" data-lang="en">Donate Now</a>
 </div>
 
 <section>
+  
   <div class="project-block">
-    <div class="project-header"><h2>American University Kyiv (AUK)</h2></div>
+    <div class="project-header">
+      <h2><a href="https://auk.edu.ua/en/" target="_blank">«Міст у майбутнє» (Партнерство з American University Kyiv)</a></h2>
+    </div>
     <div class="project-content">
-      <p data-lang="ua">Надання якісного навчання для кращих студентів та підлітків через офлайн-курси.</p>
-      <p data-lang="en">Providing quality education for top students and teenagers through offline courses.</p>
-      
-      <div class="photo-grid">
-        <img src="1.jpg" alt="AUK Students">
-        <img src="2.jpg" alt="AUK Class">
+      <div class="content-part">
+        <h4 data-lang="ua">Суть</h4>
+        <h4 data-lang="en">Essence</h4>
+        <p data-lang="ua">Це не просто курси англійської, а повний цикл соціального ліфта - від мовної підготовки до отримання престижного диплома американського зразка в Україні.</p>
+        <p data-lang="en">This is a full cycle of social mobility - from language training to obtaining a prestigious American-style degree in Ukraine.</p>
       </div>
 
-      <p style="font-size: 0.85rem; color: #666; margin-top: 15px;" data-lang="ua">*Додатково передбачено 5 грантів на повне навчання в університеті (по 20 000$ на студента, загалом 100 000$).</p>
-      <p style="font-size: 0.85rem; color: #666; margin-top: 15px;" data-lang="en">*Additionally, 5 full university scholarships are provided ($20,000 per student, $100,000 total).</p>
+      <div class="photo-grid">
+        <img src="5.jpg" alt="AUK Project">
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Контекст</h4>
+        <h4 data-lang="en">Context</h4>
+        <p data-lang="ua">Через війну талановиті діти вразливих категорій втратили доступ до якісної освіти. Ми даємо їм шанс на міжнародну кар'єру, не виїжджаючи з країни.</p>
+        <p data-lang="en">Due to the war, talented children from vulnerable categories lost access to quality education. We give them a chance for an international career without leaving the country.</p>
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Механіка</h4>
+        <h4 data-lang="en">Mechanics</h4>
+        <p data-lang="ua">30 дітей навчаються на офлайн-курсах англійської на базі AUK. 5 найкращих отримують повну стипендію на 4 роки бакалаврату.</p>
+        <p data-lang="en">30 children study English at AUK offline courses. The 5 best students receive a full scholarship for a 4-year bachelor's degree.</p>
+      </div>
+
+      <div class="budget-box">
+        <strong data-lang="ua">Бюджет: $108,832</strong>
+        <strong data-lang="en">Budget: $108,832</strong>
+        <p data-lang="ua">($8,832 курси + $100,000 навчання на 5 стипендій)</p>
+        <p data-lang="en">($8,832 courses + $100,000 tuition for 5 scholarships)</p>
+      </div>
     </div>
   </div>
 
   <div class="project-block">
     <div class="project-header">
-        <h2 data-lang="ua">Харківська область</h2>
-        <h2 data-lang="en">Kharkiv Region</h2>
+      <h2><a href="https://hopechildrenua.org/program-donation-page/" target="_blank">«Освітні хаби на лінії фронту» (Харківська обл.)</a></h2>
     </div>
     <div class="project-content">
-      <p data-lang="ua">Створення освітнього центру для 160 дітей у постраждалих регіонах Харківщини.</p>
-      <p data-lang="en">Establishing an educational center for 160 children in the affected areas of the Kharkiv region.</p>
-      
+      <div class="content-part">
+        <h4 data-lang="ua">Суть</h4>
+        <h4 data-lang="en">Essence</h4>
+        <p data-lang="ua">Відновлення доступу до навчання у Близнюківській громаді (40-60 км від фронту), де діти перебувають в ізоляції.</p>
+        <p data-lang="en">Restoring access to education in the Blyznyuky community (40-60 km from the front), where children are in isolation.</p>
+      </div>
+
       <div class="photo-grid">
-        <img src="3.jpg" alt="Workshops">
-        <img src="4.jpg" alt="Children learning">
-        <img src="5.jpg" alt="Group photo">
+        <img src="11.jpg" alt="Frontline Hub">
+        <img src="1.jpg" alt="Children">
+        <img src="3.jpg" alt="Classroom">
+        <img src="4.jpg" alt="Learning">
+        <img src="8.jpg" alt="Hope">
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Механіка</h4>
+        <h4 data-lang="en">Mechanics</h4>
+        <p data-lang="ua">Мережа з 4 локацій, де 160 дітей вивчають англійську мову з професійними вчителями офлайн.</p>
+        <p data-lang="en">A network of 4 locations where 160 children study English with professional teachers offline.</p>
+      </div>
+
+      <div class="budget-box">
+        <strong data-lang="ua">Річний бюджет: $34,190</strong>
+        <strong data-lang="en">Annual Budget: $34,190</strong>
+        <p data-lang="ua">Ефективність: всього $213 на дитину за рік якісного навчання.</p>
+        <p data-lang="en">Efficiency: only $213 per child per year of quality education.</p>
       </div>
     </div>
   </div>
 
   <div class="project-block">
-    <div class="project-header"><h2>Hope - children of Ukraine</h2></div>
+    <div class="project-header">
+      <h2><a href="https://hopechildrenua.org/program-donation-page/" target="_blank">«Цифрова освіта та стійкість» (Онлайн-школа Hope)</a></h2>
+    </div>
     <div class="project-content">
-      <p data-lang="ua">Центр розвитку та мовної підготовки для 250 дітей.</p>
-      <p data-lang="en">Development and language training center for 250 children.</p>
-      
+      <div class="content-part">
+        <h4 data-lang="ua">Суть</h4>
+        <h4 data-lang="en">Essence</h4>
+        <p data-lang="ua">Підтримка та розширення онлайн-школи, яка вже навчає 250 дітей з усієї України та за кордоном.</p>
+        <p data-lang="en">Support and expansion of the online school, which already teaches 250 children from all over Ukraine and abroad.</p>
+      </div>
+
       <div class="photo-grid">
-        <img src="8.jpg" alt="Hope Lesson">
-        <img src="9.jpg" alt="Happy children">
+        <img src="13.jpg" alt="Digital Education">
       </div>
 
-      <div class="mission-box">
-        <h3 data-lang="ua">Місія фонду</h3>
-        <h3 data-lang="en">Our Mission</h3>
-        <p data-lang="ua">В Україні рівень володіння англійською потребує значного покращення. У нас є амбітна ціль — збільшити % дітей, які вільно спілкуються англійською, відкриваючи їм світ нових можливостей.</p>
-        <p data-lang="en">In Ukraine, the level of English proficiency needs significant improvement. We have an ambitious goal — to increase the percentage of children who speak English fluently, opening up a world of new opportunities for them.</p>
+      <div class="content-part">
+        <h4 data-lang="ua">Механіка розширення</h4>
+        <h4 data-lang="en">Expansion Mechanics</h4>
+        <p data-lang="ua">Донор може покрити базову програму або нові напрямки: Арт-терапія (подолання ПТСР) та Профорієнтація.</p>
+        <p data-lang="en">Donors can cover the base program or new directions: Art Therapy (PTSD recovery) and Career Guidance.</p>
       </div>
 
-      <p style="margin-top: 20px; font-size: 0.85rem; font-style: italic;" data-lang="ua">*Якщо розширити проект та додати арт-терапію і профорієнтацію — додатково +36 000$ на рік.</p>
-      <p style="margin-top: 20px; font-size: 0.85rem; font-style: italic;" data-lang="en">*Expanding the project to include art therapy and career guidance adds $36,000 per year.</p>
+      <div class="budget-box">
+        <strong data-lang="ua">Базовий бюджет: $72,000 на рік</strong>
+        <strong data-lang="en">Base Budget: $72,000 per year</strong>
+        <p data-lang="ua">Розширення: + $1,500 - $3,000 на місяць за додаткові модулі.</p>
+        <p data-lang="en">Expansion: + $1,500 - $3,000 per month for additional modules.</p>
+      </div>
     </div>
   </div>
+
 </section>
 
 <footer>
   <div class="logo-text" style="font-size: 1.2rem;">Hope - children of Ukraine</div>
-  <p>© 2026 hopechildrenua.org</p>
+  <p data-lang="ua">Допоможіть нам змінити майбутнє: <a href="https://hopechildrenua.org/program-donation-page/" style="color: var(--yellow);">Зробити донат</a></p>
+  <p data-lang="en">Help us change the future: <a href="https://hopechildrenua.org/program-donation-page/" style="color: var(--yellow);">Make a Donation</a></p>
+  <p style="margin-top: 20px; opacity: 0.6;">© 2026 hopechildrenua.org</p>
 </footer>
 
 <script>
