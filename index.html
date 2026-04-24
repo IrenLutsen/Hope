@@ -36,6 +36,7 @@ body {
   background: var(--blue);
   border-radius: 20px;
   padding: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .lang-btn {
   border: none;
@@ -45,6 +46,7 @@ body {
   cursor: pointer;
   font-weight: 700;
   border-radius: 15px;
+  transition: 0.3s;
 }
 .lang-btn.active { background: var(--yellow); color: var(--dark); }
 
@@ -156,7 +158,7 @@ footer { background: var(--dark); color: white; padding: 50px 20px; text-align: 
 <div class="hero">
   <div class="logo-text">Hope - children of Ukraine</div>
   <h1 data-lang="ua">Трансформуємо життя дітей через освіту</h1>
-  <h1 data-lang="en">Transforming children's lives through education</h1>
+  <h1 data-lang="en">Transforming Children's Lives Through Education</h1>
   <a href="https://hopechildrenua.org/program-donation-page/" class="btn-donate" data-lang="ua">Підтримати проект</a>
   <a href="https://hopechildrenua.org/program-donation-page/" class="btn-donate" data-lang="en">Donate Now</a>
 </div>
@@ -170,9 +172,9 @@ footer { background: var(--dark); color: white; padding: 50px 20px; text-align: 
     <div class="project-content">
       <div class="content-part">
         <h4 data-lang="ua">Суть</h4>
-        <h4 data-lang="en">Essence</h4>
+        <h4 data-lang="en">Core Idea</h4>
         <p data-lang="ua">Це не просто курси англійської, а повний цикл соціального ліфта - від мовної підготовки до отримання престижного диплома американського зразка в Україні.</p>
-        <p data-lang="en">This is a full cycle of social mobility - from language training to obtaining a prestigious American-style degree in Ukraine.</p>
+        <p data-lang="en">This is more than just English courses; it's a full social elevator — from language training to obtaining a prestigious American-style degree right here in Ukraine.</p>
       </div>
 
       <div class="photo-grid">
@@ -182,22 +184,29 @@ footer { background: var(--dark); color: white; padding: 50px 20px; text-align: 
       <div class="content-part">
         <h4 data-lang="ua">Контекст</h4>
         <h4 data-lang="en">Context</h4>
-        <p data-lang="ua">Через війну талановиті діти вразливих категорій втратили доступ до якісної освіти. Ми даємо їм шанс на міжнародну кар'єру, не виїжджаючи з країни.</p>
-        <p data-lang="en">Due to the war, talented children from vulnerable categories lost access to quality education. We give them a chance for an international career without leaving the country.</p>
+        <p data-lang="ua">Через війну талановиті діти вразливих категорій (діти загиблих героїв, ВПО, діти військових) втратили доступ до якісної освіти. Ми пропонуємо дати їм шанс на міжнародну кар'єру, не виїжджаючи з країни.</p>
+        <p data-lang="en">Due to the war, talented children from vulnerable categories (children of fallen heroes, IDPs, children of military personnel) have lost access to quality education. We offer them a chance for an international career without leaving their home country.</p>
       </div>
 
       <div class="content-part">
         <h4 data-lang="ua">Механіка</h4>
         <h4 data-lang="en">Mechanics</h4>
-        <p data-lang="ua">30 дітей навчаються на офлайн-курсах англійської на базі AUK. 5 найкращих отримують повну стипендію на 4 роки бакалаврату.</p>
-        <p data-lang="en">30 children study English at AUK offline courses. The 5 best students receive a full scholarship for a 4-year bachelor's degree.</p>
+        <p data-lang="ua">30 дітей навчаються на офлайн-курсах англійської мови на базі AUK. Після закінчення курсів проводиться конкурс і 5 найкращих отримують повну стипендію на 4 роки бакалаврату.</p>
+        <p data-lang="en">30 children study English in offline courses at AUK. Upon completion, a competition is held, and the 5 best students receive full scholarships for a 4-year bachelor's degree.</p>
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Чому це важливо</h4>
+        <h4 data-lang="en">Why It Matters</h4>
+        <p data-lang="ua">Це створення нової інтелектуальної еліти України. Результат - конкретна дитина з вищою освітою світового рівня.</p>
+        <p data-lang="en">This is about creating a new intellectual elite for Ukraine. The result is a specific child receiving a world-class higher education.</p>
       </div>
 
       <div class="budget-box">
-        <strong data-lang="ua">Бюджет: $108,832</strong>
-        <strong data-lang="en">Budget: $108,832</strong>
-        <p data-lang="ua">($8,832 курси + $100,000 навчання на 5 стипендій)</p>
-        <p data-lang="en">($8,832 courses + $100,000 tuition for 5 scholarships)</p>
+        <strong data-lang="ua">Бюджетні опції (Курси + Стипендії):</strong>
+        <strong data-lang="en">Budget Options (Courses + Scholarships):</strong>
+        <p data-lang="ua">Курси 12 міс. + 5 стипендій: $108,832 ($8,832 курси + $100,000 навчання).</p>
+        <p data-lang="en">12-month courses + 5 scholarships: $108,832 ($8,832 courses + $100,000 tuition).</p>
       </div>
     </div>
   </div>
@@ -209,9 +218,9 @@ footer { background: var(--dark); color: white; padding: 50px 20px; text-align: 
     <div class="project-content">
       <div class="content-part">
         <h4 data-lang="ua">Суть</h4>
-        <h4 data-lang="en">Essence</h4>
+        <h4 data-lang="en">Core Idea</h4>
         <p data-lang="ua">Відновлення доступу до навчання у Близнюківській громаді (40-60 км від фронту), де діти перебувають в ізоляції.</p>
-        <p data-lang="en">Restoring access to education in the Blyznyuky community (40-60 km from the front), where children are in isolation.</p>
+        <p data-lang="en">Restoring access to education in the Blyznyuky community (40-60 km from the front line), where children are currently in isolation.</p>
       </div>
 
       <div class="photo-grid">
@@ -219,21 +228,34 @@ footer { background: var(--dark); color: white; padding: 50px 20px; text-align: 
         <img src="1.jpg" alt="Children">
         <img src="3.jpg" alt="Classroom">
         <img src="4.jpg" alt="Learning">
-        <img src="8.jpg" alt="Hope">
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Контекст</h4>
+        <h4 data-lang="en">Context</h4>
+        <p data-lang="ua">У селах Харківщини постійні обстріли та відсутність стабільного інтернету роблять онлайн-навчання проблематичним. Ми створюємо безпечні офлайн-хаби, де будуть проходити курси з вивчення англійської мови.</p>
+        <p data-lang="en">In the villages of the Kharkiv region, constant shelling and the lack of stable internet make online learning problematic. We create safe offline hubs where English language courses are held.</p>
       </div>
 
       <div class="content-part">
         <h4 data-lang="ua">Механіка</h4>
         <h4 data-lang="en">Mechanics</h4>
-        <p data-lang="ua">Мережа з 4 локацій, де 160 дітей вивчають англійську мову з професійними вчителями офлайн.</p>
-        <p data-lang="en">A network of 4 locations where 160 children study English with professional teachers offline.</p>
+        <p data-lang="ua">Створення мережі з 4 локацій, де 160 дітей (розділені на 20 груп) будуть вивчати англійську мову з професійними вчителями. Фонд забезпечує підручники та оплату праці команди.</p>
+        <p data-lang="en">Creating a network of 4 locations where 160 children (divided into 20 groups) will study English with professional teachers. The Foundation provides textbooks and covers staff salaries.</p>
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Чому це важливо</h4>
+        <h4 data-lang="en">Why It Matters</h4>
+        <p data-lang="ua">Це повернення дітей до соціалізації та нормального життя. Це інвестиція у прифронтовий регіон, який потребує підтримки найбільше.</p>
+        <p data-lang="en">This brings children back to socialization and normal life. It is an investment in a frontline region that needs support the most.</p>
       </div>
 
       <div class="budget-box">
-        <strong data-lang="ua">Річний бюджет: $34,190</strong>
-        <strong data-lang="en">Annual Budget: $34,190</strong>
+        <strong data-lang="ua">Бюджет проєкту: $34,190 на рік</strong>
+        <strong data-lang="en">Project Budget: $34,190 per year</strong>
         <p data-lang="ua">Ефективність: всього $213 на дитину за рік якісного навчання.</p>
-        <p data-lang="en">Efficiency: only $213 per child per year of quality education.</p>
+        <p data-lang="en">Efficiency: only $213 per child for a year of quality education.</p>
       </div>
     </div>
   </div>
@@ -245,27 +267,41 @@ footer { background: var(--dark); color: white; padding: 50px 20px; text-align: 
     <div class="project-content">
       <div class="content-part">
         <h4 data-lang="ua">Суть</h4>
-        <h4 data-lang="en">Essence</h4>
-        <p data-lang="ua">Підтримка та розширення онлайн-школи, яка вже навчає 250 дітей з усієї України та за кордоном.</p>
-        <p data-lang="en">Support and expansion of the online school, which already teaches 250 children from all over Ukraine and abroad.</p>
+        <h4 data-lang="en">Core Idea</h4>
+        <p data-lang="ua">Підтримка та розширення діючої онлайн-школи, яка вже навчає 250 дітей з усієї України.</p>
+        <p data-lang="en">Support and expansion of the existing online school, which already teaches 250 children from all over Ukraine.</p>
       </div>
 
       <div class="photo-grid">
-        <img src="13.jpg" alt="Digital Education">
+        <img src="13.jpg" alt="Online School">
       </div>
 
       <div class="content-part">
-        <h4 data-lang="ua">Механіка розширення</h4>
-        <h4 data-lang="en">Expansion Mechanics</h4>
-        <p data-lang="ua">Донор може покрити базову програму або нові напрямки: Арт-терапія (подолання ПТСР) та Профорієнтація.</p>
-        <p data-lang="en">Donors can cover the base program or new directions: Art Therapy (PTSD recovery) and Career Guidance.</p>
+        <h4 data-lang="ua">Контекст</h4>
+        <h4 data-lang="en">Context</h4>
+        <p data-lang="ua">Наша онлайн-школа - це «освітній тил» для дітей, які розкидані по всій Україні та за кордоном. Ми вже маємо працюючу структуру, яку можна масштабувати.</p>
+        <p data-lang="en">Our online school serves as an "educational rear" for children scattered across Ukraine and abroad. We have an established structure ready for scaling.</p>
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Механіка</h4>
+        <h4 data-lang="en">Mechanics</h4>
+        <p data-lang="ua">Донор може або покрити витрати на існуючу програму англійської, або спонсорувати нові напрямки: Арт-терапія (подолання ПТСР) та Профорієнтація.</p>
+        <p data-lang="en">Donors can either cover the costs of the existing English program or sponsor new critical areas: Art Therapy (PTSD recovery) and Career Guidance.</p>
+      </div>
+
+      <div class="content-part">
+        <h4 data-lang="ua">Чому це важливо</h4>
+        <h4 data-lang="en">Why It Matters</h4>
+        <p data-lang="ua">Це дозволяє охопити велику кількість дітей одночасно, незалежно від їхнього місця перебування.</p>
+        <p data-lang="en">This allows us to reach a large number of children simultaneously, regardless of their physical location.</p>
       </div>
 
       <div class="budget-box">
-        <strong data-lang="ua">Базовий бюджет: $72,000 на рік</strong>
-        <strong data-lang="en">Base Budget: $72,000 per year</strong>
-        <p data-lang="ua">Розширення: + $1,500 - $3,000 на місяць за додаткові модулі.</p>
-        <p data-lang="en">Expansion: + $1,500 - $3,000 per month for additional modules.</p>
+        <strong data-lang="ua">Базовий бюджет (англійська): $72,000 на рік</strong>
+        <strong data-lang="en">Base Budget (English): $72,000 per year</strong>
+        <p data-lang="ua">Розширення (арт-терапія, профорієнтація): від $1,500 до $3,000 на місяць.</p>
+        <p data-lang="en">Expansion (art therapy, guidance): from $1,500 to $3,000 per month.</p>
       </div>
     </div>
   </div>
